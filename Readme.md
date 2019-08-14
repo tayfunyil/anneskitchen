@@ -1,4 +1,4 @@
-# The Simple Ionic Powered Radio Player
+# The Simple Ionic Powered Recipe Book
 
 If you like my project, "Star" in the corresponding project right corner, please. If you want to buy me a cup of coffee, use the Bitcoin QR Code right below.
 
