@@ -1,0 +1,30 @@
+{
+  "ion_title": "Menemen",
+  "recipe_description": "This traditional Turkish breakfast item is scrambled eggs cooked in sautéed vegetables and served hot with bread. Dip it, spread it, or spoon it up.",
+  "ion_img": "assets/imgs/breakfast/menemen-1.jpg",
+  "category_title": "Breakfast",
+  "list_of_ingredients_title": "List of ingredients",
+  "recipe_title": "Recipe",
+  "tutorial_title": "Tutorial",
+  "difficulty": "3",
+  "list_of_ingredients": {
+    "1": "2 tbsp olive oil",
+    "2": "2 onions, sliced",
+    "3": "1 red or green pepper, halved deseeded and sliced",
+    "4": "1-2 red chillies, deseeded and sliced",
+    "5": "400g can chopped tomatoes",
+    "6": "1-2 tsp caster sugar",
+    "7": "4 eggs",
+    "8": "small bunch parsley, roughly chopped",
+    "9": "6 tbsp thick, creamy yogurt",
+    "10": "2 garlic cloves, crushed"
+  },
+  "recipe": {
+    "1": "Dice your onions",
+    "2": "Roast your meat gently"
+  },
+  "gifs": {
+    "1": "assets/imgs/cutting.gif",
+    "2": "assets/imgs/roast.gif"
+  }
+}

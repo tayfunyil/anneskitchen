@@ -1,0 +1,30 @@
+{
+  "ion_title": "Laz Tatlisi",
+  "recipe_description": "Laz Böreği in Turkish or Galaktoboureko in Greek is a dessert made with custard and filo. Unlike Napoleons or  Mille-Feuille, the custard is baked in the pastry. This dessert is a specialty in the region of Rize Turkey off the coast of the Black Sea where my father-in-laws family originates from.",
+  "ion_img": "assets/imgs/dinner/laztatlisi-1.jpg",
+  "category_title": "Dinner",
+  "list_of_ingredients_title": "List of ingredients",
+  "recipe_title": "Recipe",
+  "tutorial_title": "Tutorial",
+  "difficulty": "2",
+  "list_of_ingredients": {
+    "1": "2 tbsp olive oil",
+    "2": "2 onions, sliced",
+    "3": "1 red or green pepper, halved deseeded and sliced",
+    "4": "1-2 red chillies, deseeded and sliced",
+    "5": "400g can chopped tomatoes",
+    "6": "1-2 tsp caster sugar",
+    "7": "4 eggs",
+    "8": "small bunch parsley, roughly chopped",
+    "9": "6 tbsp thick, creamy yogurt",
+    "10": "2 garlic cloves, crushed"
+  },
+  "recipe": {
+    "1": "Dice your onions",
+    "2": "Roast your meat gently"
+  },
+  "gifs": {
+    "1": "assets/imgs/cutting.gif",
+    "2": "assets/imgs/roast.gif"
+  }
+}

@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Recipe - {{ionTitle}}</ion-title>
+        <ion-buttons slot="start">
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="/"></ion-back-button>
+            </ion-buttons>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>{{categoryTitle}}</ion-card-subtitle>
+            <ion-card-title>{{ionTitle}}
+                <ion-badge color="primary right">{{difficulty}}</ion-badge>
+            </ion-card-title>
+        </ion-card-header>
+
+        <img src={{ionImg}} class="center">
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>{{listOfIngredientsTitle}}</ion-card-subtitle>
+            <ion-card-title>{{recipeTitle}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-list>
+            <ion-item *ngFor="let ingredient of listOfIngredients">
+                <ion-label>{{ingredient}}</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>{{recipeTitle}}</ion-card-subtitle>
+            <ion-card-title>{{tutorialTitle}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-list>
+            <ion-item *ngFor="let recipeStep of listOfRecipes; index as i">
+                <div style="min-height: 150px">
+                    <ion-label class="recipeStep">{{recipeStep}}</ion-label>
+
+                    <ion-img src={{listOfGifs[i]}}></ion-img>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title>{{FOOTER}}</ion-title>
+    </ion-toolbar>
+</ion-footer>

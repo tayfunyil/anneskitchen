@@ -1,5 +1,7 @@
 {
   "name": "anneskitchen",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

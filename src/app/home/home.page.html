@@ -1,14 +1,66 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Anne's Kitchen
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <ion-searchbar showCancelButton="never" placeholder="Filter Recipes" [(ngModel)]="filterKeyword"
+                   (ngModelChange)="applyFilter()"></ion-searchbar>
+
+    <ion-card *ngFor="let recipe of RECIPE_TITLES; index as i;">
+        <div (click)="goToRecipe('/recipe/' + recipe.toString().toLowerCase().replace(' ', ''))">
+            <ion-card-header>
+                <ion-card-subtitle>{{RECIPE_CATEGORIES[i]}}</ion-card-subtitle>
+                <ion-card-title>{{RECIPE_TITLES[i]}}
+                </ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+                {{RECIPE_DESCRIPTIONS[i]}}
+                <img src={{RECIPE_IMAGES[i]}} class="center">
+
+                <div *ngIf="RECIPE_DIFFCULTIES[i] < 5">
+                    <u>Difficulty Level:</u>
+                    <ion-badge color="primary">{{RECIPE_DIFFCULTIES[i]}}</ion-badge>
+                </div>
+
+                <div *ngIf="RECIPE_DIFFCULTIES[i] >= 5">
+                    <u>Difficulty Level:</u>
+                    <ion-badge color="danger">{{RECIPE_DIFFCULTIES[i]}}</ion-badge>
+                </div>
+            </ion-card-content>
+
+        </div>
+    </ion-card>
+
+    <ion-fab vertical="bottom" horizontal="start" edge slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="information-circle-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="end">
+            <ion-fab-button>
+                <ion-icon name="person" (click)="goToAbout()"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="top">
+            <ion-fab-button onclick="window.open('http://www.instagram.com')">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button onclick="window.open('http://www.facebook.com')">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button onclick="window.open('http://www.twitter.com')">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title>{{FOOTER}}</ion-title>
+    </ion-toolbar>
+</ion-footer>

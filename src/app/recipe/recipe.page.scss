@@ -1,0 +1,26 @@
+
+ion-img {
+  width: 200px;
+  padding: 10pt;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+}
+
+.recipeStep {
+  word-break: break-all;
+}
+
+ion-footer ion-title {
+  text-align: center;
+  font-size: 10pt;
+}
